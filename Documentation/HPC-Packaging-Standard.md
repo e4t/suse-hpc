@@ -38,7 +38,7 @@ plugins etc. - need to reside in their own directory structure.
   provide a different ABI and thus render MPI-dependent libraries flavor-
   dependent as well, the flavor may be appended to the family name,
   separated by a hyphen: `<mpi_family>[-<flavor>]`. For the purpose
-  of depenencies, different flavors with different ABIs may be treated
+  of dependencies, different flavors with different ABIs may be treated
   as different MPI families.)
 - this is followed by the package (ie library) name and an optional
   flavor identifier (separated from the library name by a hyphen `-`).
@@ -51,7 +51,7 @@ plugins etc. - need to reside in their own directory structure.
 
 ### Package Naming Convention
 
-Libraries should follow this naming sceme to avoid conflicts between
+Libraries should follow this naming scheme to avoid conflicts between
 versions and flavors and to allow different versions to be installed
 in parallel.
 
@@ -73,7 +73,7 @@ The package name should consist of:
 - If the package requires MPI support, the MPI family used, separated
   by a hyphen, followed by the major version of the MPI family:
   `[-<mpi_family><mpi_family_version>]` (<mpi_family> may augmented
-  by a 'build flavor' if needed, spearated by a hyphen: `<mpi_family>[-<flavor>]`
+  by a 'build flavor' if needed, separated by a hyphen: `<mpi_family>[-<flavor>]`
 - followed by the string 'hpc' separated by a hyphen: `-hpc`.
 
 ### Environment Module files
@@ -87,7 +87,7 @@ versions.
 - this is followed by a directory according to the compiler family
   used. If a different compiler than the base compiler is used,
   the name of the directory is the name of the compiler family
-  combined with the compiler dependecy version (generally the major
+  combined with the compiler dependency version (generally the major
   version) separated by a hyphen:
   `<compiler_family_name>[-<compiler_family_dependency_version>]/`.
 - if the library uses MPI, this is followed by a directory named
